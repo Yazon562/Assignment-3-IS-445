@@ -1,0 +1,14 @@
+p#headline{
+    text-align: center;
+}
+
+p.sectionTitle{
+    text-align: center;
+    font-size: 16px;
+}
+
+p.sectionHeading{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
