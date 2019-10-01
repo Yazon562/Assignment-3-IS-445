@@ -6,3 +6,5 @@ body {
     color: navy;
     margin-left: 20px;
   }
+
+  p.dotted {border-style: dotted;}
