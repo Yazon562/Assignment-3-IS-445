@@ -1,11 +1,7 @@
-body {
-    background-color: powderblue;
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
-
-  
+div#contactBox{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color: green;
+    border-style: solid;
+    height: 400px;
+}
