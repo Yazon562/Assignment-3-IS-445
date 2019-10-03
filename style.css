@@ -13,3 +13,8 @@ div>ul{
     padding: 10px;
     list-style: none;
 }
+
+.container {
+    width: 900px;
+    }
+
