@@ -35,23 +35,23 @@ const org2_depts = [
 
 function PrintDepts(depts, parent) { 
 
-  var listEl = document.createElement('ul')
+  var listyaz = document.createElement('ul')
 
   for(let i = 0; i < depts.length; i++){ 
     let currentItem = depts[i]
-    var listItemEl = document.createElement('li')
-    listItemEl.innerHTML = currentItem.name
-    listEl.appendChild(listItemEl)
+    var listItemyaz = document.createElement('li')
+    listItemyaz.innerHTML = currentItem.name
+    listyaz.appendChild(listItemyaz)
     if (currentItem.children.length) {
-      PrintDepts(currentItem.children, listItemEl)
+      PrintDepts(currentItem.children, listItemyaz)
     }
   }
 
   if(parent) { 
-    parent.appendChild(listEl)
+    parent.appendChild(listyaz)
   }
   else {
-outputDiv.appendChild(listEl)
+outputDiv.appendChild(listyaz)
   }
   
 }
