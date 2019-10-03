@@ -42,7 +42,6 @@ function PrintDepts(depts, parent) {
     var listItemEl = document.createElement('li')
     listItemEl.innerHTML = currentItem.name
     listEl.appendchild(listItemEl)
-
     if (currentItem.children.length) {
       PrintDepts(currentItem.children, listItemEl)
     }
@@ -54,3 +53,14 @@ function PrintDepts(depts, parent) {
   else {
 outputDiv.appendChild(listEl)
   }
+  
+}
+var h2 = document.createElement('h2')
+h2.innerHTML = 'Organization 1';
+outputDiv.appendChild(h2)
+PrintDepts(org1_depts)
+
+var h2 = document.createElement('h2')
+h2.innerHTML = 'Organization 2';
+outputDiv.appendChild(h2)
+PrintDepts(org2_depts)
