@@ -31,7 +31,7 @@ const org2_depts = [
   },
 ]
 
-// FUNCTION  
+// FUNCTION
 
 function listOrg(orgData,targetUL) {
   var i;
@@ -63,8 +63,5 @@ function listOrg(orgData,targetUL) {
 // CALL FUNCTION
 PrintDepts(org1_depts,document.getElementById("org1"));
 PrintDepts(org2_depts,document.getElementById("org2"));
-
-
-
 
   
