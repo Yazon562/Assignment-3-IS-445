@@ -1,4 +1,4 @@
-// DATA
+const outputDiv = document.getElementById('output')
 
 const org1_depts = [
   {
@@ -33,35 +33,23 @@ const org2_depts = [
 
 // FUNCTION
 
-function listOrg(orgData,targetUL) {
-  var i;
-  for (i = 0; i < orgData.length; i++) {
-    if (orgData[i].hasOwnProperty('name')) {
-      // Take out the text from the .name property
-      var nameText = document.createTextNode(orgData[i].name);
-      // Define a new <li> tag
-      var newLI = document.createElement('li');
-      // Append text to new <li> tage - newLI
-      newLI.appendChild(nameText);
-      // Append element to <ul> tag
-      targetUL.appendChild(newLI);
-    }
+function PrintDepts(depts, parent) { 
+  var listEl = document.createElement('ul')
 
-    if (orgData[i].hasOwnProperty('children')) {
-      // Define new <ul> tag
-      var newUL = document.createElement('ul');
-      // Append new <ul> tag
-      var lowUl = targetUL.appendChild(newUL);
-      // Select new lower level <ul> tag
-      var lowUL = targetUL.querySelector('ul');
-      // Recurse
-      listOrg(orgData[i].children,lowUL );
+  for(let i= 0; i < depts.length; i++){ 
+    let currentItem = depts[i]
+    var listItemEl = document.createElement('li')
+    listItemEl.innerHTML = currentItem.name
+    listEl.appendchild(listItemEl)
+
+    if (currentItem.children.length) {
+      PrintDepts(currentItem.children, listItemEl)
     }
   }
-}
 
-// CALL FUNCTION
-PrintDepts(org1_depts,document.getElementById("org1"));
-PrintDepts(org2_depts,document.getElementById("org2"));
-
-  
+  if(parent) { 
+    parent.appendChild(listEl)
+  }
+  else{
+outputDiv.appendChild(listEl)
+  }

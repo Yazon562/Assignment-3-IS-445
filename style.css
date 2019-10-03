@@ -1,45 +1,16 @@
-div.content{
-    padding: 0px;
-    max-width: 900 px;   
+h1{
+    text-align: center;
+
 }
-ul.accOrg1{
-    list-style-type: circle;
-    list-style-position: inside;
-    line-height: 100%;
+
+h2{
+    text-align: center;
 }
-ul.accOrg2{
-    list-style-type: circle;
-    list-style-position: inside;
-    line-height: 100%;
-    padding-left: 20px;
-}
-ul.accRecOrg2{
-    list-style-type: square;
-    list-style-position: inside;
-    line-height: 100%;
-    padding-left: 40px;
-}
-ul.finOrg2{
-    list-style-type: circle;
-    list-style-position:inside;
-    line-height: 100%;
-    padding-left: 20px;
-}
-div#org1Box{
-    border-color: green;
-    border-style: solid;
-    padding: 3px; 
+
+div>ul{
     margin: auto;
-    width: 400px;
-    height: 120px;
-}
-div#org2Box{
-    border-color: green;
-    border-style: solid;
-    padding: 3px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin: auto;
-    width: 400px;
-    height: 190px;
+    width: 40%; 
+    border: 3px solid green;
+    padding: 10px;
+    list-style: none;
 }
