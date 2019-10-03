@@ -9,7 +9,7 @@ const org1_depts = [
     ],
   },
   {
-    name: 'finance',
+    name: 'finance', 
     children: [],
   },
 ]
