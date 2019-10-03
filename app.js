@@ -31,12 +31,13 @@ const org2_depts = [
   },
 ]
 
-// FUNCTION
+// FUNCTION 
 
 function PrintDepts(depts, parent) { 
+
   var listEl = document.createElement('ul')
 
-  for(let i= 0; i < depts.length; i++){ 
+  for(let i = 0; i < depts.length; i++){ 
     let currentItem = depts[i]
     var listItemEl = document.createElement('li')
     listItemEl.innerHTML = currentItem.name
@@ -50,6 +51,6 @@ function PrintDepts(depts, parent) {
   if(parent) { 
     parent.appendChild(listEl)
   }
-  else{
+  else {
 outputDiv.appendChild(listEl)
   }
